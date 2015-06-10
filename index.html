@@ -5,13 +5,63 @@
     <title>For xjywp2008</title>
     <link rel="stylesheet" href="source/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="source/bootstrap/css/bootstrap-theme.min.css">
-    <script src="source/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="source/css/light.css" />
+
     <script src="source/js/jquery/jquery-2.1.4.min.js"></script>
+    <script src="source/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="source/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="source/js/jquery/jquery.timeline.min.js"></script>
     <script src="source/js/angular/angular.min.js"></script>
+
+
+
+    <script type="text/javascript">
+
+      $(window).load(function() {
+        // dark
+        $('.timelineLight').timeline({
+          openTriggerClass : '.read_more',
+          startItem : '15/08/2012'
+        });
+      });
+    </script>
   </head>
-  <body>
-    <a href="html/test.html">test</a>
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=356034&auto=1&height=66"></iframe>
+  <body background="source/images/background/demo-2-bg.jpg">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="timelineLight tl">
+          <div class="item" data-id="04/06/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="source/images/thumbnails/1a.jpg" rel="lightbox[timeline]">
+              <img src="source/images/thumbnails/1.jpg" alt="" />
+            </a>
+            <h2>媳妇</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="04/06/2012">Read more</div>
+          </div>
+          <div class="item_open" data-id="04/06/2012">
+            <img class="con_borderImage" src="source/images/timeline_content/1w.jpg" />
+          </div>
+
+          <div class="item" data-id="12/06/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="source/images/thumbnails/2a.jpg" rel="lightbox[timeline]">
+              <img src="source/images/thumbnails/2.jpg" alt="" />
+            </a>
+            <h2>JUNE, 12</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="12/06/2012">Read more</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=356034&auto=1&height=66"></iframe>
+      </div>
+    </div>
   </body>
 </html>
 
